@@ -1,0 +1,7 @@
+import { skills } from '../data'
+
+const capabilities = ['Product thinking', 'Frontend systems', 'Backend architecture', 'Design collaboration']
+
+export default function About() {
+  return <section className="page-section about-page"><div className="page-intro"><p className="eyebrow">02 / About me <span>↘</span></p><h1>Curious by nature.<br /><em>Serious about craft.</em></h1><p>I’m Adesh, a full-stack developer who likes to stay close to the problem. I turn ambiguous ideas into simple interfaces and resilient systems, working across the stack to make the whole experience feel considered.</p></div><div className="about-details"><div><p className="eyebrow">Capabilities</p><div className="capability-list">{capabilities.map((item, index) => <div key={item}><span>0{index + 1}</span>{item}<b>↗</b></div>)}</div></div><div><p className="eyebrow">Toolkit</p><div className="skill-cloud">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div><p className="about-note">I care about accessible UI, clear APIs, clean commits, and the tiny details users feel even when they never notice them.</p></div></div><div className="experience-strip"><p className="eyebrow">How I work</p><div><strong>Small teams. Clear communication. Measurable progress.</strong><span>From discovery and wireframes to deployment and iteration, I bring a full-stack perspective to every stage.</span></div></div></section>
+}
